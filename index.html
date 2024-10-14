@@ -3,28 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Likhithasree Kommineni Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f4f7, #c0c4c8);
+            color: #333;
         }
 
         .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .profile-pic {
-            width: 500px;
-            height: 600px;
+            width: 300px;
+            height: 350px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 30px;
+            border: 4px solid #888;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            float: left;
         }
 
-        .description {
-            max-width: 600px;
+        .description h1 {
+            font-size: 2.5rem;
+            color: #34568B;
+        }
+
+        .description p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #34568B;
+            margin-bottom: 10px;
+        }
+
+        .github-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .github-link a {
+            text-decoration: none;
+            color: white;
+            background-color: #0066cc;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .github-link a:hover {
+            background-color: #004999;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project-item p {
+            margin: 0;
+        }
+
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -33,8 +101,50 @@
         <img class="profile-pic" src="02.jpg" alt="Profile Picture">
         <div class="description">
             <h1>Likhithasree Kommineni</h1>
-            <p>Hello, I am Likhithasree Kommineni, a passionate developer who enjoys building web applications and exploring new technologies. <b>Welcome to my portfolio!</b></p>
+            <p>
+                Hello, I am a Full Stack Developer passionate about web technologies, cloud computing, and AI. I enjoy building interactive applications and exploring innovative solutions to complex problems.
+                <br><b>Technical Expertise:</b> Python, Java, CMS, AWS, Full Stack Development (SpringBoot, JavaScript, React, etc.), Machine Learning, R, Git, Mysql, Oracle, MongoDb, Pentaho, Splunk, Jira, Twilio, Openshift, Dynatrace, SonarQube.
+            </p>
         </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="container section">
+        <h2>About Me</h2>
+        <p>
+            Proficient in Python, Java, AWS, and R, I bring a wealth of experience in full-stack development, cloud platforms, and AI. I have worked on diverse projects, including AI-based crime rate prediction models and complex application development for clients such as IBM.
+        </p>
+    </div>
+
+    <div class="container section">
+        <h2>Project: Crime Rate Prediction Using AI & ML</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Project Overview</h3>
+                <p>
+                    Developed a predictive model to forecast crime rates in the UK using AI and ML techniques. By analyzing crime data from 2019 to 2022, I implemented algorithms to predict future crime patterns with high accuracy, providing actionable insights for law enforcement.
+                    <br><b>Tools:</b> Python, Jupyter Notebook, Scikit-Learn, Pandas
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <h2>Team Project: Water Hydration Tracker</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Project Overview</h3>
+                <p>
+                    Developing an application to help track the water intake of users. This project aims to send regular reminders to users to keep them hydrated and consistent. 
+                    <br><b>Tools:</b> Python, HTML, CSS, JS, GitHub, MongoDB
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section github-link">
+        <h2>Team Project GitHub</h2>
+        <a href="https://github.com/likhitha333/GVSU-CIS641-Data-Wizards" target="_blank">GitHub.io page</a>
     </div>
 </body>
 </html>
